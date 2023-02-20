@@ -3,12 +3,12 @@ package dio.myfirstwebapi.user;
 public class User {
     private Integer id;
     private String login;
-    private Integer password;
+    private String password;
 
     public User() {
     }
 
-    public User(String login, Integer password) {
+    public User(String login, String password) {
         this.login = login;
         this.password = password;
     }
@@ -37,11 +37,11 @@ public class User {
         this.login = login;
     }
 
-    public Integer getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Integer password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
